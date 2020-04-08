@@ -74,15 +74,16 @@ def down():
 dir = []
 
 def algo(value):
-    for:
-        down()
+    dir.append(1)
+    if dir == 1:
         right()
-        if(map[posY][posX] != 1):
-            up()
-        else:
-            down()
-            right()
-        return
+    if dir == 2:
+        left()
+    if dir == 3:
+        up()
+    else:
+        down()
+    
 def setACaseXY(X, Y, color):
     points = [X * size, Y * size, size * (X + 1), Y * size, size * (X + 1), size * (Y + 1), X * size, size * (Y + 1)]
     w.create_polygon(points, outline="#476042", fill=color, width=4)
